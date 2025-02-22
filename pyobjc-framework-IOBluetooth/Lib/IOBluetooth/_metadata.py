@@ -1538,6 +1538,16 @@ try:
     )
     r(b"IOBluetoothSDPServiceRecord", b"matchesUUID16:", {"retval": {"type": b"Z"}})
     r(b"IOBluetoothSDPServiceRecord", b"matchesUUIDArray:", {"retval": {"type": b"Z"}})
+    r(
+        b"IOBluetoothSDPServiceRecord",
+        b"getRFCOMMChannelID:",
+        {"arguments": {2: {"type": b"^C", "type_modifier": b"o"}}},
+    )
+    r(
+        b"IOBluetoothSDPServiceRecord",
+        b"getL2CAPPSM:",
+        {"arguments": {2: {"type_modifier": b"o"}}},
+    )
     r(b"IOBluetoothSDPUUID", b"isEqualToUUID:", {"retval": {"type": b"Z"}})
     r(
         b"IOBluetoothSDPUUID",
